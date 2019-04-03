@@ -75,60 +75,71 @@ body {
 	padding-top: 30px;
 }
 
-.nav-container {
+/* .nav-container {
 	display:flex;
 	flex-wrap: wrap;
 	margin-bottom: 8%;
-}
+} */
 
+nav {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 8%;
+	flex-wrap: wrap;
+	
+}
 
 nav a {
 	/* display: inline-block; */
 	text-decoration: none;
 	color: gray;
 	margin: 17px 55px 0px 0px; 
-	/* position: relative; */
-
 }
 
- .logo {
-	/* display: inline-block; */
-	/* margin-top: 10px; */
+
+
+.img-logo {
 	display: flex;
-	flex-wrap: nowrap;	
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-content: top;
 }
 
 
 
 
-header h1 {
-	font-size: 70px;
-	margin: 40px 20px;
+.iod-text {
+
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
 	text-align: center;
+    color: black;
+	margin: 40px 20px;
 	padding-bottom: 40px;
 	
 }
 
-header button {
+.iod-button {
 	 background: white;
 	border: 1px solid gray;
 	color: gray;
-	padding: 10px 120px;
-	margin: 0 50px; 
-
+	padding: 10px 100px;
+	margin: 0 auto; 
+	text-align: center;
 	
 }
 
-header .side-left {
+header .side-left { */
 	/* display: inline-block; */
-	width: 49%;
-	padding-bottom: 50px;
-	
-}
+	max-width: 50%;
+	padding-bottom: 50px; 
+	margin: 0% auto;
+ }
 
 header .side-right {
 	/* display: inline-block; */
-	width: 49%;
+	max-width: 50%;
 	padding-bottom: 50px;
 	
 }
@@ -294,6 +305,40 @@ footer .copyright {
 
  /*** media query ***/
 
+
+
+ @media(max-width: 1024px) {
+	.header-img {
+		display: none;
+	}
+	.middle-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.bottom-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	
+	.iod-text {
+		display: flex;
+		justify-content: center;
+		color: aqua;
+		text-align: center;
+	}
+
+	.features, .about, .services, .product, .vision {
+		max-width: 100%;
+		margin: 2%;
+		padding: 0% auto;
+		display: block;
+	}
+ }
+
+
+
  @media(max-width: 500px) {
 	.top-links {
 	    width: 350px;
@@ -309,7 +354,17 @@ footer .copyright {
 	margin: 0% auto;
 	border-bottom: 1px solid black; 
 	}
-
+	.middle-content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap; 
+	
+	}
+	.bottom-content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap; 
+	}
 	.side-left {
 	font-size: 70px;
 	display: flex;
@@ -320,29 +375,4 @@ footer .copyright {
 	header button {
 	margin: 0% auto;	
 }
- }
-
-
-
- @media(max-width: 800px) {
-	.header-img {
-		display: none;
-	}
-	.middle-content {
-		display: flex;
-		flex-direction: column;
-		
-	}
-	.bottom-content {
-		display: flex;
-		flex-direction: column;
-		
-	}
-
-	.features, .about, .services, .product, .vision {
-		max-width: 100%;
-		margin: 3%;
-		padding: 0% auto;
-		display: block;
-	}
  }
