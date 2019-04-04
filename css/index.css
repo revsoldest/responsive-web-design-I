@@ -68,11 +68,12 @@ h1, h2, h3, h4, h5 {
 
 
 
-body {
+html body {
 	max-width: 900px;
-	width: 67%;
+	/* width: 67%; */
 	margin: 0px auto;
-	padding-top: 30px;
+	/* padding-top: 30px; */
+
 }
 
 /* .nav-container {
@@ -97,12 +98,12 @@ nav a {
 }
 
 
-
 .img-logo {
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	align-content: top;
+
 }
 
 
@@ -116,7 +117,7 @@ nav a {
 	text-align: center;
     color: black;
 	margin: 40px 20px;
-	padding-bottom: 40px;
+	
 	
 }
 
@@ -315,7 +316,7 @@ footer .copyright {
 		flex-wrap: wrap;
         margin:0 auto;
         width: 100%;
-        padding: 0 30px;
+		padding: 0 30px;
     }
 
     header .logo {
@@ -340,7 +341,6 @@ footer .copyright {
 	.iod-text {
 		display: flex;
 		justify-content: center;
-		color: aqua;
 		text-align: center;
 	}
 
@@ -350,6 +350,25 @@ footer .copyright {
 		padding: 0% auto;
 		display: block;
 	}
+		.box-link {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			
+		  }
+		  .box-link :nth-child(1) { order: 2; }
+		  .box-link :nth-child(2) { order: 3; }
+		  .box-link :nth-child(3) { order: 4; }
+		  .box-link :nth-child(4) { order: 5; }
+		  .box-link :nth-child(5) { order: 6; }
+		  .box-link :nth-child(6) { order: 7; }
+		  .box-link :nth-child(7) { 
+			flex-shrink: 7;
+			  order: 1; 
+		
+		}
+		
+	
  }
 
 
@@ -361,14 +380,43 @@ footer .copyright {
 		margin: 0 auto;
 	}
     nav a {
-	border-bottom: 1px solid #000;
-	margin: 17px 55px 0px 0px; 
-	text-align: center;
+		border-bottom: 1px solid #000;
+		margin: 17px 55px 0px 0px; 
+		text-align: center; 
+		
 }
-	.logo {
-	margin: 0% auto;
-	border-bottom: 1px solid black; 
+
+
+	.box-link a{
+		display: block;
+		text-align: center;
+		padding: 0 20% 0 27%;
+		border-bottom: 1px solid black;
+}
+	.box-link {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		
 	}
+		.box-link :nth-child(1) { order: 2; }
+		.box-link :nth-child(2) { order: 3; }
+		.box-link :nth-child(3) { order: 4; }
+		.box-link :nth-child(4) { order: 5; }
+		.box-link :nth-child(5) { order: 6; }
+		.box-link :nth-child(6) { order: 7; }
+		.box-link :nth-child(7) { 
+			order: 1; 
+		}
+	
+	.logo {
+		padding: 0 27% 0 27%;
+		margin: 0% auto;
+		border-bottom: 1px solid black; 
+		
+	}
+
+	
 	.middle-content {
 		display: flex;
 		flex-direction: column;
@@ -381,13 +429,15 @@ footer .copyright {
 		flex-wrap: wrap; 
 	}
 	.side-left {
-	font-size: 70px;
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	padding-bottom: 40px;
+		font-size: 70px;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		padding-bottom: 30px;
+		
 	}
 	header button {
-	margin: 0% auto;	
+	    margin: 0% auto;	
 }
+
  }
